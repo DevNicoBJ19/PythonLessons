@@ -10,6 +10,11 @@ asegurar que una variable tenga un tipo específico.
 # 3. El casting puede generar errores si la conversión no es posible (por ejemplo, convertir "abc" a int).
 '''
 
+#conversion de tipos
+#se le añade el int y luego se encapsula el string "100" para convertirlo a entero
+print(int("100")+2)
+print(2+int("100"))
+
 # Ejemplos de casting de tipos en Python
 # Convertir a entero
 entero_desde_flotante = int(10.99)# Convierte float a int, resultado: 10
