@@ -8,6 +8,9 @@ En Python, los condicionales se implementan utilizando las palabras clave if, el
 # 3. Se pueden anidar condicionales dentro de otros condicionales.
 
 '''
+#---------------------------------------------------------//------------------------------------------------------------------//
+#---------------------------------------------------------//------------------------------------------------------------------//
+
 #asi se importa una libreria, os es una libreria estandar de python, pero podemos instalar otras librerias externas
 import os
 os.system("cls") #limpia la consola en windows, en mac o linux se usa "clear"
@@ -96,7 +99,6 @@ if not its_weekend:
 
 
 #Anidar condicionales
-
 edad = 18
 dinero = True
 
@@ -142,3 +144,27 @@ if nombre:
     print("El nombre no esta vacio.")
 else:
     print("El nombre esta vacio.")
+
+#recordar que para asignacion de variable es un = pero para comparacion son ==
+
+numero = 3 #asignacion
+es_el_numero_tres = (numero == 3) #comparacion, el resultado es un booleano
+
+#---------------------------------------------------------//------------------------------------------------------------------//
+#---------------------------------------------------------//------------------------------------------------------------------//
+#---------------------------------------------------------//------------------------------------------------------------------//
+'''
+Operadores ternarios:
+Forma concisa de un if else en una linea de codigo
+1. su forma es la siguiente:
+[Codigo si cumple la condicion] if [condicion] else [codigo si no cumple]
+'''
+#Ejemplo 1
+
+edad = 17
+mensaje = "Es mayor de edad" if edad >=18 else "Es menor de edad"
+print(mensaje)
+
+#ejeercicios
+
+
