@@ -70,4 +70,56 @@ print(type(name))  # Salida: <class 'str'>
 name = 12345
 print(type(name))  # Salida: <class 'int'>
 
+#print f esta desde la version de python 3.6
 print(f"Hola, mi nombre es {my_name} y tengo {age +2} años.")
+
+#NO RECOMENDADO pero se puede hacer asignacion multiple de variables en una sola linea
+name, age, height = "Nicolas", 28, 1.75 #no recomendado hacerlo en la misma linea
+print(f"Hola, mi nombre es {name}, tengo {age} años y mido {height} metros.")
+
+#converciones de variables o casting de tipos
+#snake case
+mi_variable_entero = 100          # Variable de tipo entero
+MiNombreString = "Nicolas"  # Variable de tipo string (no recomendado usar camel case en python)
+variabletodajunta = 3.14        # Variable de tipo float (no recomendado usar todo junto en python)
+mi_variable123 = True          # Variable de tipo booleano no recomendado terminar con numeros en python
+MI_CONSTANTE = 3.1416  # Constante (no recomendado usar signos en nombres de variables en python) En python no existen las constantes reales,
+                        #pero se usa esta convención para indicar que no debe cambiar su valor, se usa upper case
+MI_CONSTANTE = 299792458  # AQUI CAMBIA EL VALOR DE LA CONSTANTE, PERO NO ES RECOMENDADO HACERLO
+
+#No se puede crear variables con nombres de convenciones no permitidas
+
+'''
+las palabras reservadas que no se pueden usar son:
+False      await      else       import     pass
+None       break      except     in         raise
+True       class      finally    is         return
+and        continue   for        lambda     try
+as         def        from       nonlocal   while
+assert     del        global     not        with
+async      elif       if         or         yield
+mi-variable = 20  # No permitido: contiene un guion medio
+mi variable = 40  # No permitido: contiene un espacio
+mi.variable = 50  # No permitido: contiene un punto
+mi@variable = 60  # No permitido: contiene un carácter especial (@)
+mi$variable = 70  # No permitido: contiene un carácter especial ($)
+mi%variable = 80  # No permitido: contiene un carácter especial (%)
+mi#variable = 90  # No permitido: contiene un carácter especial (#)
+mi!variable = 100  # No permitido: contiene un carácter especial (!)
+
+'''
+
+#Tipar variables (opcional en python)
+#funciona de la siguiente manera
+mi_variable: int = 100          # Variable de tipo entero
+mi_nombre: str = "Nicolas"  # Variable de tipo string
+mi_variable_float: float = 3.14        # Variable de tipo float
+mi_variable_bool: bool = True          # Variable de tipo booleano
+mi_variable_lista: list = [1, 2, 3]    # Variable de tipo lista
+mi_variable_diccionario: dict = {"clave": "valor"}  # Variable de tipo dic
+mi_variable_tupla: tuple = (1, 2, 3)   # Variable de tipo tupla
+mi_variable_conjunto: set = {1, 2, 3}  # Variable de tipo conjunto
+mi_variable_none: None = None         # Variable de tipo None
+#pero recuerda que esto es solo una sugerencia para el programador, python no hace cumplir estos tipos
+mi_variable: int = "esto no es un entero"  # No da error, pero no es recomendable
+print(mi_variable)
